@@ -72,7 +72,7 @@ end
 
 
   def self.create(name)
-  s =self.new(name).tap{ |s| s.save }
+    s = self.new(name).tap{ |s| s.save }
   end
   
   # def self.create(name)

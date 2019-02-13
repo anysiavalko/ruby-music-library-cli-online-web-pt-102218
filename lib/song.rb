@@ -40,11 +40,11 @@ class Song
     self.class.all << self
   end
   
-  def self.create(name)
-    song = self.new(name)
-    song.save
-    song
-  end 
+  # def self.create(name)
+  #   song = self.new(name)
+  #   song.save
+  #   song
+  # end 
   
   def self.new_from_filename(filename)
     filename_array = filename.split(" - ")
@@ -70,13 +70,6 @@ class Song
 end
 
 
-#   def self.find_or_create_by_name(name)
-#       self.find_by_name(name) || self.create(name)
-#     end
-  
-#   def self.find_by_name(name)
-#       self.all.find{|a| a.name == name}
-#     end
 
  # def self.create(name)
   # self.new(name).tap{ |s| s.save }

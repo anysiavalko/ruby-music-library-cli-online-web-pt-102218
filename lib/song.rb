@@ -67,12 +67,12 @@ class Song
     self.all.clear
   end
   
-  def self.create(name)
-    s = self.new(name).tap{ |s| s.save }
-  end
+ 
   
 end
 
-
+ def self.create(name)
+    s = self.new(name).tap{ |s| s.save }
+  end
 
   
